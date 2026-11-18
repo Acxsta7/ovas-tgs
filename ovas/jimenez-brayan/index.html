@@ -140,6 +140,9 @@ p{max-width:64ch}
 .signature{text-align:center; font-size:.72rem; letter-spacing:.05em;
   color:var(--muted); opacity:.9; padding:12px 0 18px}
 .signature b{color:var(--teal); font-weight:600}
+.figure{margin:16px 0 4px; border:1px solid var(--line); border-radius:14px; background:var(--card); padding:16px 14px 10px; text-align:center}
+.figure svg{width:100%; height:auto; max-width:520px; display:block; margin:0 auto; font-family:var(--body)}
+.figcap{margin:8px auto 0; color:var(--muted); font-size:.8rem; font-style:italic; max-width:60ch}
 </style>
 </head>
 <body>
@@ -172,6 +175,25 @@ p{max-width:64ch}
       <div class="eyebrow">Módulo 1</div>
       <h2>El enfoque reduccionista</h2>
       <p>Un <b>enfoque</b> es la forma de aproximarse a un sistema. El <b>reduccionista</b> (o analítico) viene de Descartes y Newton: para entender el todo, lo <b>descompones en partes</b> y estudias cada una por separado. El todo se explica como la <b>suma</b> de sus componentes.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 520 190" role="img" aria-label="El todo se descompone en partes que se estudian por separado">
+          <defs><marker id="ar1" markerWidth="10" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#ff7a6b"/></marker></defs>
+          <rect x="34" y="48" width="92" height="92" rx="10" fill="#ff7a6b" fill-opacity=".10" stroke="#ff7a6b" stroke-width="2"/>
+          <line x1="80" y1="48" x2="80" y2="140" stroke="#ff7a6b" stroke-width="1.4" stroke-opacity=".5"/>
+          <line x1="34" y1="94" x2="126" y2="94" stroke="#ff7a6b" stroke-width="1.4" stroke-opacity=".5"/>
+          <text x="80" y="168" text-anchor="middle" fill="#9bc4b6" font-size="13">El todo</text>
+          <line x1="150" y1="94" x2="212" y2="94" stroke="#ff7a6b" stroke-width="2" marker-end="url(#ar1)"/>
+          <text x="181" y="84" text-anchor="middle" fill="#ff7a6b" font-size="11">dividir</text>
+          <rect x="238" y="44" width="44" height="44" rx="8" fill="#ff7a6b" fill-opacity=".16" stroke="#ff7a6b" stroke-width="1.5"/>
+          <rect x="296" y="44" width="44" height="44" rx="8" fill="#ff7a6b" fill-opacity=".16" stroke="#ff7a6b" stroke-width="1.5"/>
+          <rect x="238" y="100" width="44" height="44" rx="8" fill="#ff7a6b" fill-opacity=".16" stroke="#ff7a6b" stroke-width="1.5"/>
+          <rect x="296" y="100" width="44" height="44" rx="8" fill="#ff7a6b" fill-opacity=".16" stroke="#ff7a6b" stroke-width="1.5"/>
+          <text x="289" y="168" text-anchor="middle" fill="#9bc4b6" font-size="13">Partes por separado</text>
+          <g stroke="#ffbf47" stroke-width="2.6" fill="none"><circle cx="424" cy="78" r="25"/><line x1="443" y1="97" x2="462" y2="116"/></g>
+          <text x="432" y="150" text-anchor="middle" fill="#9bc4b6" font-size="12">Detalle</text>
+        </svg>
+        <figcaption class="figcap">Enfoque reduccionista: el todo se descompone en partes y cada una se estudia por separado.</figcaption>
+      </figure>
       <div class="glass red" style="margin-top:14px"><div class="tag">Idea clave</div><h3>Dividir para entender</h3><p>Fortaleza: precisión y detalle. Límite: pierde de vista las relaciones y lo que emerge del conjunto.</p></div>
       <p class="cite">Raíz: Descartes, «Discurso del método» (1637).</p>
       <div class="check">
@@ -191,6 +213,26 @@ p{max-width:64ch}
       <div class="eyebrow">Módulo 2</div>
       <h2>El enfoque sistémico</h2>
       <p>Propuesto por <b>Ludwig von Bertalanffy</b> con la Teoría General de Sistemas: el sistema se estudia como un <b>todo organizado</b>. Lo esencial son las <b>relaciones</b>, la organización y las propiedades que <b>emergen</b> del conjunto.</p>
+      <figure class="figure">
+        <svg viewBox="0 0 520 210" role="img" aria-label="Elementos conectados forman un todo con propiedades que emergen">
+          <g stroke="#3ff0c2" stroke-width="1.5" stroke-opacity=".5">
+            <line x1="260" y1="105" x2="120" y2="55"/><line x1="260" y1="105" x2="400" y2="55"/>
+            <line x1="260" y1="105" x2="95" y2="160"/><line x1="260" y1="105" x2="425" y2="160"/>
+            <line x1="260" y1="105" x2="260" y2="35"/><line x1="260" y1="105" x2="260" y2="178"/>
+            <line x1="120" y1="55" x2="260" y2="35"/><line x1="400" y1="55" x2="260" y2="35"/>
+            <line x1="95" y1="160" x2="260" y2="178"/><line x1="425" y1="160" x2="260" y2="178"/>
+          </g>
+          <g fill="#3ff0c2">
+            <circle cx="120" cy="55" r="11"/><circle cx="400" cy="55" r="11"/>
+            <circle cx="95" cy="160" r="11"/><circle cx="425" cy="160" r="11"/>
+            <circle cx="260" cy="35" r="11"/><circle cx="260" cy="178" r="11"/>
+          </g>
+          <circle cx="260" cy="105" r="31" fill="#ffbf47" fill-opacity=".18" stroke="#ffbf47" stroke-width="2"/>
+          <text x="260" y="101" text-anchor="middle" fill="#ffbf47" font-size="12" font-weight="bold">todo</text>
+          <text x="260" y="117" text-anchor="middle" fill="#ffbf47" font-size="10">emergente</text>
+        </svg>
+        <figcaption class="figcap">Enfoque sistémico: lo esencial son las relaciones; del conjunto emergen propiedades nuevas (el todo es más que la suma de las partes).</figcaption>
+      </figure>
       <div class="glass sis" style="margin-top:14px"><div class="tag">Principio</div><h3>El todo es más que la suma de las partes</h3><p>Conceptos clave: sinergia, emergencia y totalidad. Importa el conjunto, no solo las piezas.</p></div>
       <p class="cite">Raíz: Bertalanffy, «Teoría General de los Sistemas» (1968).</p>
       <div class="check">
@@ -210,6 +252,31 @@ p{max-width:64ch}
       <div class="eyebrow">Módulo 3</div>
       <h2>Análisis vs. síntesis</h2>
       <p><b>Russell Ackoff</b> resumió el cambio de época: el <b>análisis</b> toma algo aparte para explicar <em>cómo funciona</em>; la <b>síntesis</b> lo pone en su contexto para entender <em>por qué</em> hace lo que hace. Pasamos de la «Era de la Máquina» (analizar) a la «Era de los Sistemas» (sintetizar).</p>
+      <figure class="figure">
+        <svg viewBox="0 0 520 190" role="img" aria-label="El analisis va del todo a las partes y la sintesis de las partes al todo">
+          <defs>
+            <marker id="arA" markerWidth="10" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#ff7a6b"/></marker>
+            <marker id="arB" markerWidth="10" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#3ff0c2"/></marker>
+          </defs>
+          <text x="20" y="30" fill="#ff7a6b" font-size="13" font-weight="bold">Análisis</text>
+          <circle cx="72" cy="62" r="21" fill="#ff7a6b" fill-opacity=".12" stroke="#ff7a6b" stroke-width="2"/>
+          <text x="72" y="66" text-anchor="middle" fill="#9bc4b6" font-size="11">todo</text>
+          <line x1="100" y1="62" x2="206" y2="62" stroke="#ff7a6b" stroke-width="2" marker-end="url(#arA)"/>
+          <g fill="#ff7a6b" fill-opacity=".16" stroke="#ff7a6b" stroke-width="1.5">
+            <rect x="224" y="47" width="30" height="30" rx="6"/><rect x="262" y="47" width="30" height="30" rx="6"/><rect x="300" y="47" width="30" height="30" rx="6"/>
+          </g>
+          <text x="425" y="66" text-anchor="middle" fill="#9bc4b6" font-size="11">cómo funciona</text>
+          <text x="20" y="128" fill="#3ff0c2" font-size="13" font-weight="bold">Síntesis</text>
+          <g fill="#3ff0c2" fill-opacity=".16" stroke="#3ff0c2" stroke-width="1.5">
+            <rect x="42" y="135" width="30" height="30" rx="6"/><rect x="80" y="135" width="30" height="30" rx="6"/><rect x="118" y="135" width="30" height="30" rx="6"/>
+          </g>
+          <line x1="162" y1="150" x2="268" y2="150" stroke="#3ff0c2" stroke-width="2" marker-end="url(#arB)"/>
+          <circle cx="300" cy="150" r="21" fill="#3ff0c2" fill-opacity=".12" stroke="#3ff0c2" stroke-width="2"/>
+          <text x="300" y="154" text-anchor="middle" fill="#9bc4b6" font-size="11">todo</text>
+          <text x="420" y="154" text-anchor="middle" fill="#9bc4b6" font-size="11">por qué lo hace</text>
+        </svg>
+        <figcaption class="figcap">Según Ackoff: el análisis va del todo a las partes (cómo funciona); la síntesis va de las partes al todo en su contexto (por qué lo hace).</figcaption>
+      </figure>
       <div class="comp">
         <div class="r"><div class="hd a">Reduccionista / Analítico</div><div class="hd b">Sistémico / Holístico</div></div>
         <div class="r"><div class="c">Del todo hacia las partes.</div><div class="c b">De las partes hacia el todo.</div></div>
